@@ -1,0 +1,4 @@
+column,IQR lower bound,IQR upper bound,IQR outliers,Z-score outliers (|z|>3),max value
+Quantity,-1.0,7.0,0,0,5.0
+Price Per Unit,-1.0,7.0,0,0,5.0
+Total Spent,-8.0,24.0,269,0,25.0

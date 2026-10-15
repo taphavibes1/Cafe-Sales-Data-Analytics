@@ -1,0 +1,15 @@
+1. Scale: 10,000 transactions, $89,274.50 total revenue, average order $8.93 (median $8.00).
+
+2. Revenue is driven by price, not popularity: Salad earns the most ($19,125, 22.7% of known-item revenue), while Coffee sells most often. Transactions per item are similar (1,096 to 1,291); unit price vs revenue correlation across items is 0.99. Cookie is the lowest earner.
+
+3. Total Spent is right-skewed (skewness 0.82; mean $8.93 > median $8.00), so the median describes a typical order better than the mean.
+
+4. Outliers: the IQR rule flags 269 high-value orders; the Z-score rule flags 0. 268 of the 269 are Salad x 5, the largest possible order, so they are valid big orders (signal), not errors. The other 1 is an incomplete record from Project 1 (item unknown, quantity filled with the median), which is why it is worth flagging for review.
+
+5. In-store vs takeaway: no statistically meaningful difference in order value (Mann-Whitney p = 0.14; in-store $9.04 vs takeaway $8.81 average).
+
+6. Payment method: no meaningful difference in order value across methods (Kruskal-Wallis p = 0.77).
+
+7. Time: revenue per day varies by only 2.7% across months (peak Jun, low Jul) and weekdays differ by 1.06x at most, so there is no strong seasonality or weekday effect.
+
+8. Data caveats: 460 rows lack a date (excluded from trends); 40% of locations and 32% of payment methods are unknown; 480 transactions have an unknown item (excluded from item comparisons).
